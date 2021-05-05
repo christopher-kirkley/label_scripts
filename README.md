@@ -46,28 +46,35 @@ ISRC codes are 12 characters long, and follow the following conventions.
 
 ## Fill PDF
 
-Fills IPR and CueSheets templates from AtoZ, using release info from json.
+Automated filling of IPR and CueSheets templates from AtoZ, using release info from json.
 
 #### Info
-Requires a JSON (info.json) of the following format:
+Uses two pdf templates (IPR_FINAL.pdf, AtoZMedia-Vinyl-Audio-Cue-Sheet-Side-AB.pdf), and requires a JSON (info.json) of the following format:
 
-`{ "catalog_number": "",
-	"artist": "",
-	"album_name": "",
-	"speed": "",
-	"genre": "",
-	"a":[
-      "track_number": "",
-			"track_name": "",
-			"length": ""
-      ]
-      ,
-  "b":[
-      "track_number": "",
-      "track_name": "",
-      "length": ""
-      ]
-}`
+```yaml
+{
+"catalog_number": "",  
+"artist": "",  
+"album_name": "",
+"speed": "",
+"genre": "",
+"a": [
+"track_number": "",
+"track_name": "",
+"length": ""
+],
+"b": [
+"track_number": "",
+"track_name": "",
+"length": ""
+]
+}
+```
+
+Will output two files, ipr.pdf and cuesheet.pdf.
+
+### Usage
+`python fillpdf.py`
 
 
 
