@@ -2,10 +2,14 @@
 Collection of scripts used to automate business tasks.
 
 ### Dependencies
+- pandas
+- numpy
+- pdfrw
+- Pillow
+- pyperclip
+- reportlab
 
-- Python3
-- Pandas
-- Pytest (optional)
+***
 
 ## Release Dates
 
@@ -18,6 +22,8 @@ Standard usage outputs to clipboard and can be pasted.
 Optional flag -e outputs in emacs org-mode format, qualifying each deadline as a TODO item.  
 
 `release.py [-e] [orgmode file]`
+
+***
 
 ## ISRC Generator
 
@@ -39,10 +45,11 @@ ISRC codes are 12 characters long, and follow the following conventions.
 - Identifying 5 digit code is composed of 3 digit catalog identifier and 2 digit track number
 - Output generated in standard out as well as CSV
 
-
 #### Usage
 
 `python isrc.py`
+
+***
 
 ## Fill PDF
 
@@ -74,6 +81,8 @@ Will output two files, ipr.pdf and cuesheet.pdf.
 
 #### Usage
 `python fillpdf.py`
+
+***
 
 ## Catalog Project
 Builds a directory tree for new record project, using CLI.
@@ -108,6 +117,8 @@ Using the following templates:
 
 #### Usage
 `python catalog.sh`
+
+***
 
 ## QBReport to CSV
 
