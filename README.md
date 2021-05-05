@@ -61,7 +61,7 @@ Uses two pdf templates (IPR_FINAL.pdf, AtoZMedia-Vinyl-Audio-Cue-Sheet-Side-AB.p
 "a": [
 "track_number": "",
 "track_name": "",
-"length": ""
+"length": ""Business
 ],
 "b": [
 "track_number": "",
@@ -70,14 +70,12 @@ Uses two pdf templates (IPR_FINAL.pdf, AtoZMedia-Vinyl-Audio-Cue-Sheet-Side-AB.p
 ]
 }
 ```
-
 Will output two files, ipr.pdf and cuesheet.pdf.
 
 #### Usage
 `python fillpdf.py`
 
 ## Catalog Project
-
 Builds a directory tree for new record project, using CLI.
 
 #### Info
@@ -85,7 +83,6 @@ Root project directory is named after the following convention:
 `(catalog_number)_(artist_name)_(album_name)`
 
 And directory structure:
-
 ```
 .
 ├── audio
@@ -103,17 +100,20 @@ And directory structure:
 ```
 
 Using the following templates:
-
 - 12inch.psd
 - 7inch.pdf
 - digipack.pdf
 - cassette.pdf
 - cover.psd
 
-
 #### Usage
-
 `python catalog.sh`
 
+## QBReport to CSV
+
+Quick conversion of exported Quickbooks XLSX to simplified CSV.
+
+#### Usage
+`python qbreport_to_csv input.xlsx`
 
 
