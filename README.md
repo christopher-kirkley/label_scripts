@@ -1,7 +1,7 @@
 # Label Scripts
 Collection of scripts used to automate business tasks.
 
-## Dependencies
+### Dependencies
 
 - Python3
 - Pandas
