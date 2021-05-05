@@ -44,5 +44,31 @@ ISRC codes are 12 characters long, and follow the following conventions.
 
 `python isrc.py`
 
+## Fill PDF
+
+Fills IPR and CueSheets templates from AtoZ, using release info from json.
+
+#### Info
+Requires a JSON (info.json) of the following format:
+
+`{ "catalog_number": "",
+	"artist": "",
+	"album_name": "",
+	"speed": "",
+	"genre": "",
+	"a":[
+      "track_number": "",
+			"track_name": "",
+			"length": ""
+      ]
+      ,
+  "b":[
+      "track_number": "",
+      "track_name": "",
+      "length": ""
+      ]
+}`
+
+
 
 
