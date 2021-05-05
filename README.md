@@ -11,11 +11,7 @@ Collection of scripts used to automate business tasks.
 
 Generates a timeline of deadlines for record project from CSV.
 
-### Info
-
-Using a CSV provided from label distributor.
-
-### Usage
+#### Usage
 
 Standard usage outputs to clipboard and can be pasted.  
 
@@ -27,7 +23,7 @@ Optional flag -e outputs in emacs org-mode format, qualifying each deadline as a
 
 Python script to generate ISRCs from the command line.
 
-### Info
+#### Info
 ISRC codes are 12 characters long, and follow the following conventions.
 
 *Format: CC-XXX-YY-NNNNN*
@@ -37,14 +33,14 @@ ISRC codes are 12 characters long, and follow the following conventions.
 - "YY" are the last two digits of the reference year
 - "NNNNN" is a 5-digit code that identifies the recording
 
-### Features
+#### Features
 - Default values for country code and registrant code are saved in locally in a JSON
 - Default year is based on local date
 - Identifying 5 digit code is composed of 3 digit catalog identifier and 2 digit track number
 - Output generated in standard out as well as CSV
 
 
-### Usage
+#### Usage
 
 `python isrc.py`
 
