@@ -6,7 +6,7 @@ import os
 from datetime import datetime
 from pandas.io.clipboard import copy
 
-SCRIPTDIR="~/work_scripts/release_dates_script/"
+SCRIPTDIR="~/label_scripts/release_dates_script/"
 
 def main():
     release_date = input('Choose a release date DD/MM/YY: ')
@@ -52,6 +52,7 @@ if __name__ == "__main__":
     dates = main()
     if len(sys.argv) > 1:
         if sys.argv[1] == '-e':
+            print('ok')
             write_to_emacs(dates, sys.argv[2])
         else:
             pass
