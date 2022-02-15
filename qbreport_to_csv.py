@@ -26,6 +26,7 @@ def transform_catalog(df):
                     'Class': 'expense_type',
                     'Amount': 'net'},
                    inplace=True)
+    df = df.drop(columns=['Unnamed: 0', 'Split', 'Balance'])
     return df
 
 def transform_artist(df):
@@ -39,6 +40,7 @@ def transform_artist(df):
        inplace=True)
     df['artist_name'] = df['artist_name'].str.split('Artists:').str[1]
     df['item_type'] = 'Payout'
+    df = df.drop(columns=['Unnamed: 0', 'Split', 'Balance'])
     return df
 
 if __name__ == "__main__":
